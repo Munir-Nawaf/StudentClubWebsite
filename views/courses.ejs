@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/courses.css">
+</head>
+
+<body>
+
+    <%- include('header') %>
+        <main>
+            <div>
+                <h2>Courses</h2>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Title</th>
+                            <th>Enrollment</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% courses.forEach(function(course) { %>
+                        <tr>
+                            <td><%= course.Crs_Code %></td>
+                            <td><%= course.Crs_Title %></td>
+                            <td><%= course.Crs_Enrollment %></td>
+                            <td><a href="/edit-course/<%= course.Crs_Code %>">Edit</a></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+</body>
+
+</html>

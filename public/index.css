@@ -1,0 +1,97 @@
+/* Reset margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main container */
+main {
+    background-color: white;
+    width: 60%; /* Make the white box smaller */
+    padding: 15px; /* Reduce padding inside the white box */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduce spacing between the heading and the green boxes */
+}
+
+/* Header inside main */
+main > div:first-child {
+    text-align: center;
+    font-size: 1.3em; /* Slightly smaller font size for the heading */
+    font-weight: bold;
+}
+
+/* Stats container */
+main > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 15px; /* Reduce spacing between green boxes */
+    justify-items: center; /* Center-align items in the grid */
+}
+
+/* Individual stat boxes */
+main > div:last-child > div {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 90px; /* Smaller height for the green boxes */
+    width: 90%; /* Smaller width for the green boxes */
+}
+
+/* Headings inside stat boxes */
+main > div:last-child > div h5 {
+    margin: 0;
+    font-size: 1em; /* Slightly smaller text for the headings inside the boxes */
+}
+
+/* Paragraphs inside stat boxes */
+main > div:last-child > div p {
+    margin: 3px 0 0 0; /* Reduce margin inside the green boxes */
+    font-size: 0.9em; /* Slightly smaller text for the paragraphs */
+}

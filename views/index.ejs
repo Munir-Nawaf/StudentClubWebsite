@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <%- include('header') %>
+        <main>
+            <div>
+                <h2>Welcome to the Course Dashboard</h2>
+            </div>
+            <div>
+                <div>
+                    <h5>Total Courses</h5>
+                    <p>
+                        <%=course_count%>
+                    </p>
+                </div>
+                <div>
+                    <h5>Total Enrollments</h5>
+                    <p>
+                        <%=total_enrollment%>
+                        </p>
+                </div>
+                <div>
+                    <h5>Average Enrollments</h5>
+                    <p>
+                        <%=average_enrollment%>
+                        </p>
+                </div>
+                <div>
+                    <h5>Highest Enrollments</h5>
+                    <p>
+                        <%=highest_enrollment%>
+                    </p>
+                </div>
+                <div>
+                    <h5>Lowest Enrollments</h5>
+                    <p>
+                        <%=lowest_enrollment%>
+                        </p>
+                </div>
+            </div>
+        </main>
+
+</body>
+
+</html>

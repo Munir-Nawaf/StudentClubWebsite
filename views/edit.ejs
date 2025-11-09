@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Course</title>
+    <link rel="stylesheet" href="/edit.css">
+</head>
+
+<body>
+    <%- include('header') %>
+    <main>
+        <div>
+            <h2>Edit Course</h2>
+        </div>
+        <form action="/edit-course/<%= course[0].Crs_Code %>" method="POST">
+            <div>
+                <label for="Crs_Title">Course Title:</label>
+                <input type="text" id="Crs_Title" name="Crs_Title" value="<%= course[0].Crs_Title %>" required>
+            </div>
+            <div>
+                <label for="Crs_Enrollment">Course Enrollment:</label>
+                <input type="number" id="Crs_Enrollment" name="Crs_Enrollment" value="<%= course[0].Crs_Enrollment %>" required>
+            </div>
+            <button type="submit">Update Course</button>
+        </form>
+    </main>
+</body>
+
+</html>

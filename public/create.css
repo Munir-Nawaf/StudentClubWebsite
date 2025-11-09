@@ -1,0 +1,93 @@
+/* Reset margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+/* Header styling */
+header {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Main container styling */
+main {
+    background-color: white;
+    width: 30%; /* Adjust the width of the box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Center the box horizontally */
+    margin-top: 80px; /* Move the box down vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between form elements */
+}
+
+/* Header inside the form */
+main > h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Label for input fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input fields styling */
+input {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end; /* Align the button to the bottom right */
+    width: 30%;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+}

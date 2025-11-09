@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course</title>
+    <link rel="stylesheet" href="/create.css">
+</head>
+
+<body>
+    <%- include('header') %>
+    <main>
+        <h2>Create Course</h2>
+        <form action="/create-course" method="POST">
+            <label for="code">Course Code:</label>
+            <input type="text" id="code" name="Crs_Code" required>
+
+            <label for="title">Course Title:</label>
+            <input type="text" id="title" name="Crs_Title" required>
+
+            <label for="enrollment">Course Enrollment:</label>
+            <input type="number" id="enrollment" name="Crs_Enrollment" required>
+
+            <button type="submit">Create Course</button>
+        </form>
+    </main>
+</body>
+
+</html>
